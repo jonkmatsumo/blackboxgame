@@ -1,5 +1,4 @@
 from blackboxgame import BlackBoxGame
-import os
 
 if __name__ == '__main__':
     ch = input("Start a game? (y/n) : ")
