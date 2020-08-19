@@ -45,10 +45,6 @@ def get_atoms():
         return atoms
 
 
-def process_input():
-    # TO-DO: verify input is digit, return value, otherwise None
-    pass
-
 def move():
     while True:
         row = input("Enter a x-coordinate : ")
