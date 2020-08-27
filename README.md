@@ -1,6 +1,6 @@
 # Black Box
 Black Box was a board game published by the Waddingtons in the 1970s. The game consists of players shooting rays into a black box, an area the users know nothing about.
-As they traverse through this Black Box, the rays change position as they encounter "atoms", the objects that the players are looking for. An example of a Black Box game board is:
+Per the [Wikipedia](https://en.wikipedia.org/wiki/Black_Box_(game)) page, As they traverse through this Black Box, the rays change position as they encounter "atoms", the objects that the players are looking for. An example of a Black Box game board is:
 
 ![Sample Black Box Board](/assets/blackboxboard.png)
 
