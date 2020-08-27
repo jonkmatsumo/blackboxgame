@@ -1,4 +1,5 @@
 from blackboxgame import BlackBoxGame
+from random import randint
 
 
 def get_atoms():
@@ -13,6 +14,33 @@ def get_atoms():
             print("Invalid input. Try again!")
             continue
 
+        gen_random = input("Enter '1' to generate Atoms randomly or '2' to set up Custom game: ")
+
+        if gen_random == '1':
+            atoms = get_atoms_randomly(num_atoms)
+        elif gen_random == '2':
+            atoms = get_atoms_from_user(num_atoms)
+        else:
+            print("Invalid input. Try again!")
+            continue
+
+        return atoms
+
+
+def get_atoms_randomly(num_atoms):
+    atoms = set()
+
+    while len(atoms) < num_atoms:
+        row = randint(1, 8)
+        col = randint(1, 8)
+        position = (row, col)
+        atoms.add(position)
+
+    return atoms
+
+
+def get_atoms_from_user(num_atoms):
+    while True:
         atoms = set()
         while len(atoms) < num_atoms:
             # get x-coordinate
