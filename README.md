@@ -11,24 +11,23 @@ A "ray" will move forward from the direction it is declared until one of the fol
 
 ![Sample Hit](/assets/blackboxhit.png)
 
-- Deflection
+- Deflection: If a ray comes in the proximity of (but does not touch) an Atom, it rotates its path 90 degrees in the opposite direction.
 
 ![Sample Deflection](/assets/blackboxdeflection.png)
 
-- Reflection
+- Reflection: If a ray comes in the proximity of two Atoms, it reverses its path. A Reflection starts and ends at the same position.
 
 ![Sample Reflection](/assets/blackboxreflection.png)
 
-- Double Deflection
-
+- Double Deflection: A ray can get deflected more than once.
 
 ![Sample Double Deflection](/assets/blackboxdoubledeflection.png)
 
-- Miss
+- Miss: A ray that does not encounter any atoms (either directly or in its proximity) traverses the board in a straight line.
 
 ![Sample Miss](/assets/blackboxmiss.png)
 
-- Detour
+- Detour: A ray that does not result in a Hit or a Reflection is called a Detour. These include single or multiple deflections and misses.
 
 ![Sample Detour](/assets/blackboxdetour.png)
 
