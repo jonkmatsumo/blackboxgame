@@ -105,6 +105,7 @@ def move():
 
 
 if __name__ == '__main__':
+    print("Welcome to Black Box Game!")
     ch = input("Start a game? (y/n) : ")
     print('\n')
 
@@ -140,11 +141,15 @@ if __name__ == '__main__':
                 break
 
         print('\n')
-        # TO-DO: Actual Rule of Game: 2-Players, Lowest Score Wins
+
+        # TO-DO: Multi-Player Mode
+
         if atoms_left <= 0 and score > 0:
             print("Congratulations! You won!")
         else:
             print("Game Over. Better luck next time!")
         print("Final Score :", score)
+    else:
+        print("No game started.")
 
     print("\nGoodbye!")
